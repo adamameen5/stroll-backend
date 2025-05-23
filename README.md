@@ -44,3 +44,21 @@ Follow these steps to set up and run the backend API:
 - If you encounter issues, verify that the API URL is correct and the backend server is running.
 
 For any questions or issues, feel free to contact Adam Ameen.
+
+## ⌚ What could have been done with a bit more time 
+
+Right now, the API is simple — just three controllers and some mocked data. If I had a few more hours, I would make it a little more structured and easier to manage, like this:
+
+1. Split the code into layers, like:
+   - Have controllers to handle API request
+   - Have a business layer to handle extra logic like validation and stuff
+   - Database layer - for storing and retrieving data
+   This keeps the code tidy and follows best practices.
+
+2. Create a class library for Models. I will move the data models like Prescription, SessionResult and Patient into a seperate class library. This will help these models to be used across different services.
+
+3. Add support for pagination for data like session results and prescriptions.
+
+4. Even though it's mocked data now, I will structure the code in a way it's easy to incorporate a real database later like SQL Server using SQL Dapper.
+
+So with a few more hours, I will just focus on organizing the code better which follows a clean architecture which will allow me to extend the features and also maintain the code easily.
