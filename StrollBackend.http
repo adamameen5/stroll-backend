@@ -1,0 +1,6 @@
+@StrollBackend_HostAddress = http://localhost:5120
+
+GET {{StrollBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
